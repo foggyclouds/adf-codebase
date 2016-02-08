@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="com.nttdata.view" ClientType="Generic">
+  <pageMap>
+    <page path="/test1.jspx" usageId="com_nttdata_view_test1PageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_nttdata_view_test1PageDef"
+          path="com.nttdata.view.pageDefs.test1PageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="CoreHRMainAMDataControl" Package="com.nttdata.model.am"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl"
+                     SupportsTransactions="true" SupportsFindMode="true"
+                     SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="CoreHRAMLocal"
+                     syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

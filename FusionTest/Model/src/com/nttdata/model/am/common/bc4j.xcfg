@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="com.nttdata.model.am.CoreHRMainAM">
+      <AppModuleConfig name="CoreHRAMLocal"
+                       ApplicationName="com.nttdata.model.am.CoreHRMainAM" DeployPlatform="LOCAL" jbo.project="com.nttdata.model.Model">
+         <Security AppModuleJndiName="com.nttdata.model.am.CoreHRMainAM"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/LOCAL_HRDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="CoreHRAMShared"
+                       ApplicationName="com.nttdata.model.am.CoreHRMainAM" DeployPlatform="LOCAL" jbo.project="com.nttdata.model.Model">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="com.nttdata.model.am.CoreHRMainAM"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/LOCAL_HRDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

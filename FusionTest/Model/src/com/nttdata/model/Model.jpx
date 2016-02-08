@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   xmlns="http://xmlns.oracle.com/bc4j"
+   Name="Model"
+   Version="11.1.1.64.93"
+   SeparateXMLFiles="true"
+   PackageName="com.nttdata.model" >
+   <DesignTime>
+      <Attr Name="_jprName" Value="../../../../Model.jpr" />
+      <Attr Name="_appModuleNames0" Value="com.nttdata.model.am.CoreHRMainAM" />
+      <Attr Name="_NamedConnection" Value="LOCAL_HR" />
+   </DesignTime>
+   <Containee
+      Name="am"
+      ObjectType="JboPackage"
+      PackageName="com.nttdata.model.am" >
+      <DesignTime>
+         <Attr Name="_AM" Value="true" />
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="assoc"
+      ObjectType="JboPackage"
+      PackageName="com.nttdata.model.eo.assoc" >
+      <DesignTime>
+         <Attr Name="_AS" Value="true" />
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="eo"
+      ObjectType="JboPackage"
+      PackageName="com.nttdata.model.eo" >
+      <DesignTime>
+         <Attr Name="_EO" Value="true" />
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="link"
+      ObjectType="JboPackage"
+      PackageName="com.nttdata.model.vo.link" >
+      <DesignTime>
+         <Attr Name="_VL" Value="true" />
+      </DesignTime>
+   </Containee>
+   <Containee
+      Name="vo"
+      ObjectType="JboPackage"
+      PackageName="com.nttdata.model.vo" >
+      <DesignTime>
+         <Attr Name="_VO" Value="true" />
+      </DesignTime>
+   </Containee>
+</JboProject>
